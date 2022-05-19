@@ -1,0 +1,13 @@
+# Hand-constructed for testing purposes May 3 2022
+#   all URLs are relative to condition base url by default
+FIRST_RUN,LAST_RUN,RUNTYPE,URL
+125,137,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220415.csv"
+138,163,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220416.csv"
+164,204,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220417.csv"
+205,224,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220419.csv"
+224,234,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220421.csv"
+235,257,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220422.csv"
+258,272,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220423.csv"
+273,281,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220424_07.csv"
+282,298,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220424_22.csv"
+299,315,"ANY","Hcal/testbeam04-2022/pedestals/v1_0_0/pedestals_20220426.csv"
