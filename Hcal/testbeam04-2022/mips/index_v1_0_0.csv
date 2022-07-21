@@ -1,0 +1,5 @@
+# Hand-constructed for testing purposes May 3 2022
+#   all URLs are relative to condition base url by default
+FIRST_RUN,LAST_RUN,RUNTYPE,URL
+205,281,"ANY","Hcal/testbeam04-2022/mips/v1_0_0/mip_calib_phase2_run224_adcsum_1stpedexcl_pass1_v0.csv"
+282,315,"ANY","Hcal/testbeam04-2022/mips/v1_0_0/mip_calib_phase3_run287_adcsum_1stpedexcl_pass1_v0.csv"
