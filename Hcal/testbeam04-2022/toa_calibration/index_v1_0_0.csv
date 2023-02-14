@@ -1,0 +1,5 @@
+# Hand-constructed for testing purposes Feb 13 2023
+#   all URLs are relative to condition base url by default
+FIRST_RUN,LAST_RUN,RUNTYPE,URL
+205,281,"ANY","Hcal/testbeam04-2022/toa_calibration/v1_0_0/toa_calibration_phase2_expand.csv"
+282,315,"ANY","Hcal/testbeam04-2022/toa_calibration/v1_0_0/toa_calibration_phase3_expand.csv"
