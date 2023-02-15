@@ -15,10 +15,13 @@ df_0 = pd.read_csv(
 )
 df_0.rename(columns={"Det_id_0": "DetID"}, inplace=True)
 
+# second digi ID
 df_1 = pd.read_csv(
     f"{arg.input_file}", comment="#", usecols=["Det_id_1", "bx_shift", "mean_shift"]
 )
 df_1.rename(columns={"Det_id_1": "DetID"}, inplace=True)
+# has a mean shift of 0
+df_1["mean_shift"].values[:] = 0
 
 # append dataframe to old dataframe
 df = pd.concat([df_0, df_1])
