@@ -26,3 +26,23 @@ EcalReconConditions tables (`DetID,ADC_PEDESTAL,ADC_GAIN,TOT_PEDESTAL,TOT_GAIN`)
     outside the L3 shadow (and 1 L3 cell) have the layer median gain.
   - The muon angle is not corrected (the MIP grows only about 4% from 0 to
     30 degrees).
+
+## alignment
+
+EcalAlignment tables (`DetID,DX,DY,DZ`, mm): shift of the whole ECal vs the
+`ldmx-esa-cosmic26-v2` geometry, one row with the ID of `EcalID(0, 0, 0)`.
+`EcalGeometryProvider` (with `alignment` set, as in `esa26_alignment()`)
+builds the geometry of each run with it.
+
+- DY = HCal y track at the hit layer minus the ldmx-sw cell center y, mean
+  of the core (median +- 30 mm), single L2 or L3 hits >= 12 ADC on a good
+  straight HCal y track, L2 and L3 pooled.
+- `v1_0_0/alignment_20261103.csv`, runs 230-461: DY +64.8 (runs 317-426,
+  run-to-run rms 0.7, 300 to 2200 hits per run).
+- `v1_0_0/alignment_20261118.csv`, from run 462: DY -0.6 (runs 466-500,
+  rms 0.5). The ECal moved down by 65.4 mm during 18-Nov (run 459 on 17-Nov
+  is at the old place, 462 on 18-Nov at the new one; 460 and 461 have no
+  HCal tracks), to within 1 mm of the CAD position.
+- L2 alone needs 1.7 mm less DY than L3, in both periods; not corrected.
+- DX and DZ are 0: x needs HCal x tracks, whose plane conventions are still
+  provisional; z is not measured with HCal tracks.

@@ -1,0 +1,4 @@
+#   URLs are relative to the conditions base URL
+FIRST_RUN,LAST_RUN,RUNTYPE,URL
+230,461,"ANY","Ecal/esa26/alignment/v1_0_0/alignment_20261103.csv"
+462,-1,"ANY","Ecal/esa26/alignment/v1_0_0/alignment_20261118.csv"
