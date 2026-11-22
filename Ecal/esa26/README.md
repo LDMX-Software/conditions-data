@@ -1,6 +1,6 @@
 # ECal, ESA 2026 cosmic stand
 
-Conditions for ECal layers 2 and 3 of the ESA 2026 cosmic stand, loaded in
+Conditions for ECal layers 0, 2 and 3 of the ESA 2026 cosmic stand, loaded in
 ldmx-sw by `LDMX.Ecal.esa26_conditions.esa26_recon_conditions()`. Cell IDs
 follow `EcalDetectorMap.esa26()`.
 
@@ -26,6 +26,12 @@ EcalReconConditions tables (`DetID,ADC_PEDESTAL,ADC_GAIN,TOT_PEDESTAL,TOT_GAIN`)
     outside the L3 shadow (and 1 L3 cell) have the layer median gain.
   - The muon angle is not corrected (the MIP grows only about 4% from 0 to
     30 degrees).
+- `index_v1_3_0.csv`: adds layer 0 (ROCs 1, 2, 4, 5, 288 cells) from run 590.
+  Runs 230-589 keep `v1_2_0/pedestals_20261103.csv`; from run 590
+  `v1_3_0/pedestals_20261122.csv` is the same layer 2 and 3 rows plus layer
+  0: ADC pedestal per channel from the 22-Nov-26 100 V calibration set (taken
+  right after the pedestal leveling at 14:00), default gains (0.3125 fC/ADC).
+  Runs before 590 had unleveled layer 0 pedestals and get no layer 0 rows.
 
 ## alignment
 
