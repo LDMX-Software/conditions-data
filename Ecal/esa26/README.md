@@ -46,3 +46,10 @@ builds the geometry of each run with it.
 - L2 alone needs 1.7 mm less DY than L3, in both periods; not corrected.
 - DX and DZ are 0: x needs HCal x tracks, whose plane conventions are still
   provisional; z is not measured with HCal tracks.
+- `index_v1_1_0.csv` (for `ldmx-esa-cosmic26-v2` without `flip_x`): same DY,
+  plus DX from HCal x tracks with the corrected ESA26 HCal map, defined as DY
+  (x track minus ldmx-sw cell center x, core mean). Runs 230-461: DX +33.3
+  (runs 394-459, x from the planes above the ECal only); from run 462: DX
+  +37.6 (runs 484-564, planes above and below). L2 and L3 agree within
+  1.4 mm. DZ stays 0 (the residual vs track slope suggests about 8 mm, not
+  applied).
